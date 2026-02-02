@@ -1,0 +1,24 @@
+{
+  "title": "Democratization of India’s Hardware & Bio Labs — Public Infrastructure for Next-Gen Entrepreneurs",
+  "slug": "india-hardware-bio-labs-public-infrastructure.html",
+  "date": "2025-02-10",
+  "desc": "Why India must democratize hardware and bio lab infrastructure to unlock affordable innovation and manufacturing.",
+  "category": "technology",
+  "thumb": "/images/hardware-infra.webp",
+  "content_html": "
+  <p>India has invested heavily in digital public infrastructure. The next wave must equip makers with physical infrastructure...</p>
+
+  <h2>Why Democratize Hardware and Lab Infrastructure?</h2>
+  <img src='/images/hardware-infra.webp' alt='Maker space and shared hardware labs'>
+  <p>When hardware and lab access is expensive and siloed, innovation is limited to well-funded teams...</p>
+
+  <h2>Machine Tool Labs and CNC Access</h2>
+  <p>Public machine tool labs equipped with CNCs and lathes allow rapid iteration...</p>
+
+  <h2>Community Bio Labs</h2>
+  <p>Community bio labs with safety and governance unlock experimentation in biotech...</p>
+
+  <h2>Conclusion</h2>
+  <p>India’s next leap is making physical tools public, not just digital code...</p>
+  "
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXXXXX');
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <link rel="stylesheet" href="/css/style.css?v=1">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h2><a href="/">Insight Chronicles</a></h2>
+  </div>
+</header>
+
+<main class="article-page">
+
+  <section class="article-header">
+    <h1>{{TITLE}}</h1>
+    <p class="meta">{{DATE}} · {{READING_TIME}}</p>
+    <p class="desc">{{DESCRIPTION}}</p>
+  </section>
+
+  <!-- TOC -->
+  <aside class="toc">
+    <h3>Contents</h3>
+    {{TOC}}
+  </aside>
+
+  <!-- TOP AD -->
+  <div class="ad-slot">ADVERTISEMENT</div>
+
+  <article class="article-content">
+    {{CONTENT}}
+  </article>
+
+  <!-- MID AD -->
+  <div class="ad-slot">ADVERTISEMENT</div>
+
+  <!-- TOOLS / BOOKS -->
+  <section class="tools">
+    <h3>Tools & Resources</h3>
+    {{TOOLS}}
+  </section>
+
+  <!-- SHARE -->
+  <section class="share">
+    {{SHARE_BUTTONS}}
+  </section>
+
+  <!-- PREV / NEXT -->
+  <nav class="article-navigation">
+    {{PREV_ARTICLE}}
+    {{NEXT_ARTICLE}}
+  </nav>
+
+  <!-- RECOMMENDED -->
+  <section class="recommended">
+    <h3>Recommended Articles</h3>
+    <div class="recommended-grid">
+      {{RECOMMENDED_ARTICLES}}
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© Insight Chronicles</p>
+</footer>
+
+</body>
+</html>

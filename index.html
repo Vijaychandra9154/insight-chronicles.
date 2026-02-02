@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insight Chronicles – Deep Analysis on Technology, History & Geopolitics</title>
+  <meta name="description" content="Insight Chronicles publishes in-depth articles on technology, geopolitics, history, and governance." />
+
+  <link rel="stylesheet" href="/css/style.css?v=1">
+
+  <!-- Google Analytics (replace ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1><a href="/">Insight Chronicles</a></h1>
+    <nav>
+      <a href="/technology.html">Technology</a>
+      <a href="/history.html">History</a>
+      <a href="/geopolitics.html">Geopolitics</a>
+      <a href="/governance.html">Governance</a>
+      <a href="/archive.html">Archive</a>
+    </nav>
+  </div>
+</header>
+
+<main class="article-page">
+
+  <!-- HERO -->
+  <section class="article-header">
+    <h2>Independent long-form analysis on power, technology & civilization</h2>
+    <p class="desc">
+      Essays that go beyond headlines — written for thinkers, builders, and policy-minded readers.
+    </p>
+  </section>
+
+  <!-- LATEST ARTICLES -->
+  <section class="recommended">
+    <h3>Latest Articles</h3>
+    <div class="recommended-grid" id="latest-articles">
+      <!-- JS injects articles here -->
+    </div>
+  </section>
+
+  <!-- MID AD -->
+  <div class="ad-slot">ADVERTISEMENT</div>
+
+  <!-- ABOUT / TRUST -->
+  <section class="tools">
+    <h3>About Insight Chronicles</h3>
+    <p>
+      We publish deeply researched articles on technology, geopolitics, governance, and history —
+      with a focus on systems, incentives, and long-term consequences.
+    </p>
+    <p>
+      <a href="/start-here.html">Start here →</a> ·
+      <a href="/write-for-us.html">Write for us →</a> ·
+      <a href="/sponsor.html">Sponsor →</a>
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>
+    © Insight Chronicles ·
+    <a href="/privacy.html">Privacy</a> ·
+    <a href="/terms.html">Terms</a> ·
+    <a href="/fact-checking.html">Fact-checking</a>
+  </p>
+</footer>
+
+<!-- LOAD ARTICLES -->
+<script>
+fetch('/articles.json')
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('latest-articles');
+    data.slice(0, 6).forEach(a => {
+      const card = document.createElement('a');
+      card.href = a.slug;
+      card.innerHTML = `
+        <div class="article-card">
+          ${a.thumb ? `<img src="${a.thumb}" alt="${a.title}">` : ``}
+          <h4>${a.title}</h4>
+          <p>${a.desc || ''}</p>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  });
+</script>
+
+</body>
+</html>

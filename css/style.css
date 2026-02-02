@@ -1,0 +1,50 @@
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;overflow-x:hidden;background:#0b1220;color:#e5e7eb;font-family:system-ui}
+a{color:#60a5fa;text-decoration:none}
+
+.site-header{background:#020617;padding:14px}
+.container{max-width:1100px;margin:auto}
+
+.article-header{padding:24px 16px}
+.article-header h1{font-size:clamp(1.8rem,5vw,2.6rem)}
+.meta{opacity:.6}
+.desc{margin-top:10px}
+
+.article-page{max-width:1100px;margin:auto}
+
+.toc{background:#111827;padding:16px;margin:16px;border-radius:12px}
+.toc ul{padding-left:16px}
+
+.article-content{padding:16px}
+.article-content *{max-width:100%}
+.article-content img{width:100%;border-radius:12px;margin:16px 0}
+
+.ad-slot{
+  margin:24px 16px;
+  padding:24px;
+  text-align:center;
+  background:#020617;
+  border:1px dashed #334155;
+  border-radius:12px;
+  opacity:.6
+}
+
+.tools{padding:24px 16px}
+.tools a{display:block;margin-bottom:8px}
+
+.share{padding:16px}
+.share a{margin-right:12px}
+
+.article-navigation{display:flex;gap:16px;padding:16px}
+.article-navigation a{background:#111827;padding:12px;border-radius:12px}
+
+.recommended{padding:24px 16px}
+.recommended-grid{display:grid;grid-template-columns:1fr;gap:16px}
+.recommended-grid a{background:#111827;padding:12px;border-radius:12px}
+
+.site-footer{text-align:center;padding:32px;opacity:.6}
+
+@media(min-width:768px){
+  .toc{float:right;width:280px}
+  .recommended-grid{grid-template-columns:repeat(3,1fr)}
+}

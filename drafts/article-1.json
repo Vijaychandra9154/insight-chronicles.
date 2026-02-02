@@ -1,0 +1,24 @@
+{
+  "title": "How India’s Plan of Democratizing Public Services Will Guide Other Countries and Break Monopolies",
+  "slug": "india-democratizing-public-services-dpi.html",
+  "date": "2025-01-15",
+  "desc": "How India’s digital public infrastructure—from UPI and ONDC to ABHA and ONOS—is reshaping governance and weakening monopolies.",
+  "category": "governance",
+  "thumb": "/images/upi-democratization.webp",
+  "content_html": "
+  <p>Over the last decade, India has built one of the most ambitious experiments in digital public infrastructure...</p>
+
+  <h2>UPI: Democratization of Digital Payments</h2>
+  <img src='/images/upi-democratization.webp' alt='UPI digital payments India'>
+  <p>Unified Payments Interface (UPI) turned India into one of the world’s largest real-time payments markets...</p>
+
+  <h2>ONDC: Democratization of E-Commerce</h2>
+  <p>The Open Network for Digital Commerce (ONDC) tries to do for e-commerce what UPI did for payments...</p>
+
+  <h2>Aadhaar and Digital Identity</h2>
+  <p>Aadhaar is a digital identity layer that allows individuals to prove who they are...</p>
+
+  <h2>Conclusion: A Blueprint Others Will Study</h2>
+  <p>Taken together, these systems form interoperable public rails that many countries are now studying...</p>
+  "
+}
